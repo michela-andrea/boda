@@ -130,15 +130,19 @@ body {
 
     border-radius:50%;
 
-    width:42px;
+    width:45px;
 
-    height:42px;
+    height:45px;
 
     margin:5px;
 
     cursor:pointer;
 
-    font-size:20px;
+    font-size:24px;
+
+    line-height:45px;
+
+    padding:0;
 
 }
 
