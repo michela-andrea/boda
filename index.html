@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Michela & Andrea | 18 Septiembre 2027</title>
+<title>Michela Sentino & Andrea Vargas | 18 septiembre 2027</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -12,169 +14,372 @@
 
 </head>
 
+
 <body>
+
 
 <header class="hero">
 
+
 <div class="language">
+
 <button onclick="changeLanguage('es')">🇪🇸</button>
+
 <button onclick="changeLanguage('it')">🇮🇹</button>
+
 <button onclick="changeLanguage('en')">🇬🇧</button>
+
 </div>
+
 
 
 <div class="hero-content">
 
-<h1>Michela Sentino<br>&<br>Andrea Vargas</h1>
 
-<h2>18 septiembre 2027</h2>
+<h1>
+Michela Sentino
+<br>
+&
+<br>
+Andrea Vargas
+</h1>
+
+
+<h2 data-key="date">
+18 septiembre 2027
+</h2>
+
+
 
 <div id="countdown">
-<span id="months">0</span> meses :
-<span id="weeks">0</span> semanas :
-<span id="days">0</span> días
-</div>
+
+<span id="months">0</span>
+<span data-key="months"> meses</span>
+:
+
+<span id="weeks">0</span>
+<span data-key="weeks"> semanas</span>
+:
+
+<span id="days">0</span>
+<span data-key="days"> días</span>
+
 
 </div>
+
+
+
+</div>
+
 
 </header>
 
 
+
+
+
 <section>
 
-<h2 data-key="welcome">Nuestra boda</h2>
 
-<p>
-Finca San Ramón<br>
-Elche, Alicante
+<h2 data-key="welcome">
+Nuestra boda
+</h2>
+
+
+<p data-key="welcomeText">
+Celebramos nuestro amor junto a las personas que más queremos.
 </p>
+
 
 </section>
 
 
 
+
+
+
+
 <section>
 
-<h2 data-key="program">Programa del día</h2>
+
+<h2 data-key="locationTitle">
+Lugar
+</h2>
+
+
+
+<h3>
+Finca San Ramón
+</h3>
+
+
+<p>
+Elche, Alicante
+</p>
+
+
+<p>
+
+<span data-key="country">
+España
+</span>
+
+</p>
+
+
+
+<p>
+
+<span data-key="address">
+Dirección
+</span>
+
+:
+
+<br>
+
+Partida, Polígono 1, 188
+
+<br>
+
+03290 Atzavares Baix
+
+<br>
+
+Alicante
+
+</p>
+
+
+
+<a class="button"
+href="https://maps.google.com/?q=Finca+San+Ramón+Elche"
+target="_blank"
+data-key="mapButton">
+
+Abrir mapa
+
+</a>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+
+<h2 data-key="programTitle">
+Programa del día
+</h2>
+
 
 
 <div class="timeline">
 
+
+
 <div>
+
 <strong>11:00</strong>
-<p>Salida bus de ida</p>
-</div>
 
-<div>
-<strong>11:15</strong>
-<p>Apertura puertas</p>
-</div>
-
-
-<div>
-<strong>12:00</strong>
-<p>Ceremonia</p>
-</div>
-
-
-<div>
-<strong>13:00</strong>
-<p>Cocktail</p>
-</div>
-
-
-<div>
-<strong>14:30</strong>
-<p>Banquete</p>
-</div>
-
-
-<div>
-<strong>17:30</strong>
-<p>Fiesta</p>
-</div>
-
-
-<div>
-<strong>00:00</strong>
-<p>Bus de regreso</p>
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<section>
-
-<h2>📍 Finca San Ramón</h2>
-
-<p>
-Partida, Polígono 1, 188<br>
-03290 Atzavares Baix<br>
-Alicante, España
+<p data-key="event1">
+Salida bus de ida
 </p>
 
-<a class="button"
-href="https://maps.google.com/?q=Finca+San+Ramón+Elche"
-target="_blank">
-Abrir mapa
-</a>
+</div>
+
+
+
+
+<div>
+
+<strong>11:15</strong>
+
+<p data-key="event2">
+Apertura puertas
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<strong>12:00</strong>
+
+<p data-key="event3">
+Ceremonia
+</p>
+
+</div>
+</div>
+
+<div>
+
+<strong>13:00</strong>
+
+<p data-key="event4">
+Cocktail
+</p>
+
+</div>
+
+
+
+<div>
+
+<strong>14:30</strong>
+
+<p data-key="event5">
+Banquete
+</p>
+
+</div>
+
+
+
+<div>
+
+<strong>17:30</strong>
+
+<p data-key="event6">
+Fiesta
+</p>
+
+</div>
+
+
+
+<div>
+
+<strong>00:00</strong>
+
+<p data-key="event7">
+Bus de regreso
+</p>
+
+</div>
+
+
+</div>
+
 
 </section>
 
 
 
+
+
+
+
 <section>
 
-<h2>🌿 Dress Code</h2>
 
-<p>
+<h2 data-key="dressTitle">
+Dress code
+</h2>
+
+
+
+<p data-key="dressText1">
+
 Celebraremos nuestro amor en un hermoso jardín mediterráneo,
 ustedes son las flores que embellecen nuestra vida y así
 quisiéramos que luzcan ese día.
+
 </p>
 
-<p>
+
+
+<p data-key="dressText2">
+
 Todos los colores son bienvenidos.
-<br>
-Por favor evitar blanco, avorio o crema.
+Se ruega evitar colores blancos, avorio o crema.
+
 </p>
 
-<p>
-Trae zapatos cómodos.
-Preferimos evitar tacones de aguja.
-Puedes traer zapatos de cambio para la fiesta.
+
+
+<p data-key="dressText3">
+
+Trae zapatos cómodos:
+se sugiere evitar tacones de aguja y preferir tacones anchos.
+Si lo prefieres puedes traer zapatos de cambio para la fiesta,
+te queremos bailando hasta el final.
+
 </p>
 
-<p>
+
+
+<p data-key="dressText4">
+
 Trae ropa ligera, fresca y cómoda.
 Queremos que disfrutes con nosotras todo el día.
+
 </p>
 
+
+
 </section>
+
+
+
+
+
 
 
 
 <section>
 
-<h2>💌 RSVP</h2>
 
-<p>
-Confirma tu asistencia mediante este formulario:
+<h2 data-key="rsvpTitle">
+RSVP
+</h2>
+
+
+<p data-key="rsvpText">
+
+Confirma tu asistencia mediante este formulario.
+
 </p>
 
-<a class="button" href="https://forms.gle/11wNZ6v6F3UANtur7" target="_blank">
+
+
+<a class="button"
+
+href="https://forms.gle/11wNZ6v6F3UANtur7"
+
+target="_blank"
+
+data-key="rsvpButton">
+
 Confirmar asistencia
+
 </a>
+
 
 </section>
 
 
+
+
+
+
+
 <script src="translations.js"></script>
+
 <script src="script.js"></script>
 
+
+
 </body>
+
+
 </html>
