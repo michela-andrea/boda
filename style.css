@@ -1,0 +1,378 @@
+/* =========================
+   MICHELA & ANDREA WEDDING
+   Mediterranean Elegant Style
+========================= */
+
+
+:root {
+    --verde-oliva: #68705b;
+    --terracota: #b97a5b;
+    --beige: #f7f3ec;
+    --texto: #3f4038;
+    --blanco: #ffffff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--beige);
+    color: var(--texto);
+    line-height: 1.7;
+}
+
+
+/* =========================
+   PORTADA
+========================= */
+
+
+.hero {
+
+    min-height: 100vh;
+
+    background:
+    linear-gradient(
+        rgba(40,40,30,0.35),
+        rgba(40,40,30,0.35)
+    ),
+    url("assets/images/portada-1.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color:white;
+
+    transition: background-image 1.5s ease-in-out;
+
+}
+
+
+.hero-content {
+
+    padding: 30px;
+
+}
+
+
+.hero h1 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(3rem,8vw,5rem);
+
+    font-weight:600;
+
+    line-height:1.1;
+
+    letter-spacing:1px;
+
+}
+
+
+.hero h2 {
+
+    margin-top:30px;
+
+    font-size:1.8rem;
+
+    font-weight:300;
+
+}
+
+
+
+#countdown {
+
+    margin-top:35px;
+
+    font-size:1.4rem;
+
+    letter-spacing:1px;
+
+}
+
+
+
+/* =========================
+   IDIOMAS
+========================= */
+
+
+.language {
+
+    position:absolute;
+
+    top:25px;
+
+    right:25px;
+
+}
+
+
+.language button {
+
+    background:white;
+
+    border:none;
+
+    border-radius:50%;
+
+    width:42px;
+
+    height:42px;
+
+    margin:5px;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+}
+
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+
+section {
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:70px 25px;
+
+    text-align:center;
+
+}
+
+
+
+section h2 {
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:3rem;
+
+    color:var(--verde-oliva);
+
+    margin-bottom:30px;
+
+}
+
+
+
+section p {
+
+    font-size:1.1rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+
+.timeline {
+
+    position:relative;
+
+    margin-top:50px;
+
+}
+
+
+.timeline::before {
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    bottom:0;
+
+    width:2px;
+
+    background:var(--terracota);
+
+}
+
+
+
+.timeline div {
+
+    position:relative;
+
+    width:50%;
+
+    padding:20px 40px;
+
+}
+
+
+
+.timeline div:nth-child(odd){
+
+    left:0;
+
+    text-align:right;
+
+}
+
+
+
+.timeline div:nth-child(even){
+
+    left:50%;
+
+    text-align:left;
+
+}
+
+
+
+.timeline strong {
+
+    font-size:1.5rem;
+
+    color:var(--terracota);
+
+}
+
+
+
+/* =========================
+   BOTONES
+========================= */
+
+
+.button {
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    border-radius:30px;
+
+    background:var(--verde-oliva);
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-top:20px;
+
+    transition:0.3s;
+
+}
+
+
+
+.button:hover {
+
+    background:var(--terracota);
+
+}
+
+
+
+/* =========================
+   DETALLES DECORATIVOS
+========================= */
+
+
+section::after {
+
+    content:"✿";
+
+    display:block;
+
+    margin-top:35px;
+
+    font-size:30px;
+
+    color:var(--terracota);
+
+}
+
+
+
+/* =========================
+   MÓVIL
+========================= */
+
+
+@media(max-width:700px){
+
+
+.hero h1 {
+
+    font-size:3rem;
+
+}
+
+
+.language {
+
+    top:15px;
+
+    right:10px;
+
+}
+
+
+
+.timeline::before {
+
+    left:20px;
+
+}
+
+
+
+.timeline div,
+.timeline div:nth-child(even),
+.timeline div:nth-child(odd){
+
+    width:100%;
+
+    left:0;
+
+    text-align:left;
+
+    padding-left:55px;
+
+}
+
+
+section h2 {
+
+    font-size:2.4rem;
+
+}
+
+
+
+}
